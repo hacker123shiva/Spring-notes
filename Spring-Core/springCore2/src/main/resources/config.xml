@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:p="http://www.springframework.org/schema/p"
+  xmlns:context="http://www.springframework.org/schema/context"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ 
+ <!-- Declarying bean1  -->
+ <bean class="com.skyline.Student" name="student1" p:studentId="24313" p:studentName="Shiva" p:studentAddress="Ballia"/>
+ 
+ 
+ 
+ <!-- bean2 of student -->
+  <bean class="com.skyline.Student" name="student2">
+ <property name="studentId" value="2245"/>
+ <property name="studentName" value="harsh"/>
+ <property name="studentAddress" value="up"/>
+ </bean>
+</beans>

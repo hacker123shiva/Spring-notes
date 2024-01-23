@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:c="http://www.springframework.org/schema/c"
+ xmlns:util="http://www.springframework.org/schema/util"
+  xmlns:context="http://www.springframework.org/schema/context"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd
+  http://www.springframework.org/schema/util
+ http://www.springframework.org/schema/util/spring-util.xsd
+ ">
+ 
+ <!-- Standalone list -->
+ <util:list list-class="java.util.LinkedList" id="mybestfriend">
+ <value>Arjun</value>
+ <value>Abhimanyu</value>
+ <value>Ved Prakash</value>
+ </util:list>
+ 
+  <!-- Standalone map -->
+ <util:map map-class="java.util.LinkedHashMap" id="myfees">
+ <entry key="Java" value="1200"/>
+ <entry key="Spring framework" value="8000"/>
+ <entry key="Django framework" value="5000"/>
+ </util:map>
+ 
+  <!-- Standalone properties -->
+  <util:properties id="dbconfig">
+  <prop key="driver">com.mysql.cj.jdbc.Driver</prop>
+  <prop key="username">root</prop>
+  </util:properties>
+  
+ <bean class="com.skyline.sc.Person"
+ name="person1">
+ <property name="friends" ref="mybestfriend"/>
+ <property name="feestructure" ref="myfees"/>
+ <property name="properties" ref="dbconfig"/>
+ </bean>
+ 
+</beans>
