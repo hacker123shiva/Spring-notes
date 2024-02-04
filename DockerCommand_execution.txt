@@ -1,0 +1,1383 @@
+Microsoft Windows [Version 10.0.22631.3085]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\ASUS1>docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+c1ec31eb5944: Pull complete
+Digest: sha256:4bd78111b6914a99dbc560e6a20eab57ff6655aea4a80c50b0c5491968cbc2e6
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+
+C:\Users\ASUS1>docker images
+REPOSITORY                 TAG       IMAGE ID       CREATED        SIZE
+welcome-to-docker          latest    501838fceaa0   3 days ago     226MB
+docker/welcome-to-docker   latest    c1f619b6477e   2 months ago   18.6MB
+hello-world                latest    d2c94e258dcb   9 months ago   13.3kB
+
+C:\Users\ASUS1>docker pull hello-world
+Using default tag: latest
+latest: Pulling from library/hello-world
+Digest: sha256:4bd78111b6914a99dbc560e6a20eab57ff6655aea4a80c50b0c5491968cbc2e6
+Status: Image is up to date for hello-world:latest
+docker.io/library/hello-world:latest
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview hello-world
+
+C:\Users\ASUS1>docker pull amazoncorretto
+Using default tag: latest
+latest: Pulling from library/amazoncorretto
+1243323cbbce: Pull complete
+f12c7305ac10: Pull complete
+Digest: sha256:2b9c43f94cd5e2f97d7af64f5865804a2d29ed5c804fab4e3c4d83ffe1fef2a8
+Status: Downloaded newer image for amazoncorretto:latest
+docker.io/library/amazoncorretto:latest
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview amazoncorretto
+
+C:\Users\ASUS1>docker pull amazoncorretto:17
+17: Pulling from library/amazoncorretto
+1243323cbbce: Already exists
+f9a83abe90dc: Pull complete
+Digest: sha256:f07051a2198a81903cfb7f218a2b834816931a49f3a73c0f435697f9b3ac6d49
+Status: Downloaded newer image for amazoncorretto:17
+docker.io/library/amazoncorretto:17
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview amazoncorretto:17
+
+C:\Users\ASUS1>docker images
+REPOSITORY                 TAG       IMAGE ID       CREATED        SIZE
+welcome-to-docker          latest    501838fceaa0   3 days ago     226MB
+amazoncorretto             latest    7d415d1e44b0   12 days ago    351MB
+amazoncorretto             17        9a79368b7d32   2 weeks ago    466MB
+docker/welcome-to-docker   latest    c1f619b6477e   2 months ago   18.6MB
+hello-world                latest    d2c94e258dcb   9 months ago   13.3kB
+
+C:\Users\ASUS1>docker search mysql
+NAME                            DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+mysql                           MySQL is a widely used, open-source relation…   14811     [OK]
+mariadb                         MariaDB Server is a high performing open sou…   5660      [OK]
+percona                         Percona Server is a fork of the MySQL relati…   624       [OK]
+phpmyadmin                      phpMyAdmin - A web interface for MySQL and M…   935       [OK]
+bitnami/mysql                   Bitnami MySQL Docker Image                      106                  [OK]
+bitnami/mysqld-exporter                                                         6
+cimg/mysql                                                                      3
+ubuntu/mysql                    MySQL open source fast, stable, multi-thread…   58
+rapidfort/mysql                 RapidFort optimized, hardened image for MySQL   25
+rapidfort/mysql8-ib             RapidFort optimized, hardened image for MySQ…   9
+google/mysql                    MySQL server for Google Compute Engine          25                   [OK]
+rapidfort/mysql-official        RapidFort optimized, hardened image for MySQ…   9
+elestio/mysql                   Mysql, verified and packaged by Elestio         0
+hashicorp/mysql-portworx-demo                                                   0
+bitnamicharts/mysql                                                             0
+databack/mysql-backup           Back up mysql databases to... anywhere!         105
+linuxserver/mysql               A Mysql container, brought to you by LinuxSe…   41
+mirantis/mysql                                                                  0
+docksal/mysql                   MySQL service images for Docksal - https://d…   0
+linuxserver/mysql-workbench                                                     54
+vitess/mysqlctld                vitess/mysqlctld                                1                    [OK]
+eclipse/mysql                   Mysql 5.7, curl, rsync                          1                    [OK]
+drupalci/mysql-5.5              https://www.drupal.org/project/drupalci         3                    [OK]
+drupalci/mysql-5.7              https://www.drupal.org/project/drupalci         0
+datajoint/mysql                 MySQL image pre-configured to work smoothly …   2                    [OK]
+
+C:\Users\ASUS1>docker search ngnix
+NAME                                   DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+userxy2015/ngnix                       ngnix                                           17
+theburi/ngnix                          ngnix                                           0
+sitek/ngnix-vsftpd                     ngnix-vsftpd                                    1                    [OK]
+ssvreddy/ngnix                                                                         0
+alamalhoda/ngnix                                                                       0
+motork/ngnix-static-app                Nginx with config for a static js app           0
+hamropatrorepo/ngnix-reverse-proxy                                                     0
+bharath2012/ngnix                                                                      0
+afzal/ngnix_rate_limit                 ngnix rate limit examples                       0
+silvade/ngnix-static                   ngnix docker image  with ubuntu                 0
+motork/ngnix-unprivileged-static-app   Image for static app without root user          0
+sushanth53/ngnix_server                ngnix server                                    0
+caubequay00/ngnix-heroku               Already set listen port of nginx to $PORT  o…   0
+ludwringliccien/ngnix-php7.1           ngnix-php7.1                                    1                    [OK]
+bguruprasad/ngnix-print-hostname       ngnix-print-hostname                            0
+snehagupta83/ngnix                     Test setup                                      0
+agualbbus/ngnix-php-proxy                                                              0
+sanghaiakshay/ngnix_https_webserver                                                    0
+lundysok/ngnix-reverse-proxy-staging                                                   0
+jenorish/ngnix                                                                         0
+lundysok/ngnix-reverse-proxy                                                           0
+venkateshs2006/ngnix-php-fpm-laravel                                                   0
+covenant/ngnix                                                                         0
+sunlitweb/ngnix                                                                        0
+starlkj/ngnix                          tde test                                        0                    [OK]
+
+C:\Users\ASUS1>docker ps -a
+CONTAINER ID   IMAGE                             COMMAND                  CREATED             STATUS                         PORTS                  NAMES
+686fc69bae65   hello-world                       "/hello"                 About an hour ago   Exited (0) About an hour ago                          boring_almeida
+a09e6d4b1ffb   welcome-to-docker:latest          "docker-entrypoint.s…"   3 days ago          Exited (0) 3 days ago                                 test-docker
+33817b3e159a   docker/welcome-to-docker:latest   "/docker-entrypoint.…"   3 days ago          Exited (255) 31 hours ago      0.0.0.0:8088->80/tcp   welcome-to-docker
+
+C:\Users\ASUS1>docker run --name mysql -it -d mysql
+Unable to find image 'mysql:latest' locally
+latest: Pulling from library/mysql
+558b7d69a2e5: Pull complete
+2cb5a921059e: Pull complete
+b85878fb9bb2: Pull complete
+d16f3fd26a82: Pull complete
+afd51b5329cb: Pull complete
+374d2f7f3267: Pull complete
+4ea1bb2c9574: Pull complete
+1c9054053605: Pull complete
+d79cd2da03be: Pull complete
+e3a1aa788d17: Pull complete
+Digest: sha256:d7c20c5ba268c558f4fac62977f8c7125bde0630ff8946b08dde44135ef40df3
+Status: Downloaded newer image for mysql:latest
+b79c1d2a8c1a09e9fae473630fd01e2a07219c2184f1bbc85c49de68d0645ff3
+
+C:\Users\ASUS1>docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+C:\Users\ASUS1>docker run --name mysql -it -d mysql
+docker: Error response from daemon: Conflict. The container name "/mysql" is already in use by container "b79c1d2a8c1a09e9fae473630fd01e2a07219c2184f1bbc85c49de68d0645ff3". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+
+C:\Users\ASUS1>docker ps -a
+CONTAINER ID   IMAGE                             COMMAND                  CREATED             STATUS
+             PORTS                  NAMES
+b79c1d2a8c1a   mysql                             "docker-entrypoint.s…"   24 seconds ago      Exited (1) 13 seconds ago                             mysql
+686fc69bae65   hello-world                       "/hello"                 About an hour ago   Exited (0) About an hour ago                          boring_almeida
+a09e6d4b1ffb   welcome-to-docker:latest          "docker-entrypoint.s…"   3 days ago          Exited (0) 3 days ago                                 test-docker
+33817b3e159a   docker/welcome-to-docker:latest   "/docker-entrypoint.…"   3 days ago          Exited (255) 32 hours ago      0.0.0.0:8088->80/tcp   welcome-to-docker
+
+C:\Users\ASUS1>docker run -it mysql -d
+2024-02-01 21:09:06+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.3.0-1.el8 started.
+2024-02-01 21:09:10+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2024-02-01 21:09:10+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.3.0-1.el8 started.
+2024-02-01 21:09:11+00:00 [ERROR] [Entrypoint]: Database is uninitialized and password option is not specified
+    You need to specify one of the following as an environment variable:
+    - MYSQL_ROOT_PASSWORD
+    - MYSQL_ALLOW_EMPTY_PASSWORD
+    - MYSQL_RANDOM_ROOT_PASSWORD
+
+C:\Users\ASUS1>docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+C:\Users\ASUS1>docker run python
+Unable to find image 'python:latest' locally
+latest: Pulling from library/python
+6a299ae9cfd9: Pull complete
+e08e8703b2fb: Pull complete
+68e92d11b04e: Pull complete
+5b9fe7fef9be: Pull complete
+09864a904dd0: Pull complete
+f26050718d24: Pull complete
+81c15c4db818: Pull complete
+5f77fa18bfae: Pull complete
+Digest: sha256:a3d69b8412f7068fd060ccc7e175825713d5a767e1e14753e75bce6f746c8a7e
+Status: Downloaded newer image for python:latest
+
+C:\Users\ASUS1>dcoker run -it hello-world
+'dcoker' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\ASUS1>dcoker run  hello-world
+'dcoker' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\ASUS1>dcoker run  hello-world
+'dcoker' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\ASUS1>dcoker run hello-world
+'dcoker' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\ASUS1>docker run -ir hello-world
+^C
+C:\Users\ASUS1>docker run -it hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+
+C:\Users\ASUS1>docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+C:\Users\ASUS1>docker run --name pythonContainer1 -it -d python
+57650e5dc21ed4263ea1ef463dd081862f1db3dea6381aabee8d2685be13f5d5
+
+C:\Users\ASUS1>docker ps -a
+CONTAINER ID   IMAGE                             COMMAND                  CREATED              STATUS
+               PORTS                  NAMES
+57650e5dc21e   python                            "python3"                11 seconds ago       Up 6 seconds                                           pythonContainer1
+b12548c7e871   hello-world                       "/hello"                 50 seconds ago       Exited (0) 35 seconds ago                              youthful_raman
+7611b7e5a307   python                            "python3"                About a minute ago   Exited (0) About a minute ago                          ecstatic_jemison
+237a37f492f2   mysql                             "docker-entrypoint.s…"   5 minutes ago        Exited (1) 4 minutes ago                               great_wilbur
+b79c1d2a8c1a   mysql                             "docker-entrypoint.s…"   5 minutes ago        Exited (1) 5 minutes ago                               mysql
+686fc69bae65   hello-world                       "/hello"                 About an hour ago    Exited (0) About an hour ago                           boring_almeida
+a09e6d4b1ffb   welcome-to-docker:latest          "docker-entrypoint.s…"   3 days ago           Exited (0) 3 days ago                                  test-docker
+33817b3e159a   docker/welcome-to-docker:latest   "/docker-entrypoint.…"   3 days ago           Exited (255) 32 hours ago       0.0.0.0:8088->80/tcp   welcome-to-docker
+
+C:\Users\ASUS1>docker ps
+CONTAINER ID   IMAGE     COMMAND     CREATED          STATUS          PORTS     NAMES
+57650e5dc21e   python    "python3"   15 seconds ago   Up 12 seconds             pythonContainer1
+
+C:\Users\ASUS1>docker exec -it 57650e5dc21e python3
+Python 3.12.1 (main, Feb  1 2024, 04:22:19) [GCC 12.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("hello world")
+hello world
+>>> class Test:
+... passs
+  File "<stdin>", line 2
+    passs
+    ^
+IndentationError: expected an indented block after class definition on line 1
+>>> pass
+>>> ob=Test()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Test' is not defined
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> exit()
+
+C:\Users\ASUS1>docker inspect 57650e5dc21e
+[
+    {
+        "Id": "57650e5dc21ed4263ea1ef463dd081862f1db3dea6381aabee8d2685be13f5d5",
+        "Created": "2024-02-01T21:13:49.817045027Z",
+        "Path": "python3",
+        "Args": [],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1694,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2024-02-01T21:13:51.280602518Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:86ac1e3337a9f9f5f6cac27a9482181bf1fa5c66982830439a6cf52a9b214df0",
+        "ResolvConfPath": "/var/lib/docker/containers/57650e5dc21ed4263ea1ef463dd081862f1db3dea6381aabee8d2685be13f5d5/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/57650e5dc21ed4263ea1ef463dd081862f1db3dea6381aabee8d2685be13f5d5/hostname",
+        "HostsPath": "/var/lib/docker/containers/57650e5dc21ed4263ea1ef463dd081862f1db3dea6381aabee8d2685be13f5d5/hosts",
+        "LogPath": "/var/lib/docker/containers/57650e5dc21ed4263ea1ef463dd081862f1db3dea6381aabee8d2685be13f5d5/57650e5dc21ed4263ea1ef463dd081862f1db3dea6381aabee8d2685be13f5d5-json.log",
+        "Name": "/pythonContainer1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                36,
+                112
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "host",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/4de9b2b601378ca61d6040e8bc1ad310879db50519c1f3d85205b654dadf1eff-init/diff:/var/lib/docker/overlay2/4156dc4c5e56b50c04211be7ea474d7a4815f69bd6cc127673d94e99856feda0/diff:/var/lib/docker/overlay2/9d62b4b44d1fa5d3f0203410a00a36368e1eb0e8c43ffaf816bdda08f00d3ce1/diff:/var/lib/docker/overlay2/74d351c6c584e6863034be1407f7225a9ba8bd0dfaf78091bc9a09e79bff88c9/diff:/var/lib/docker/overlay2/9a6bb058fa29bc5c6dd0050e8750a2080a6c970697e738352d9a50b929996c79/diff:/var/lib/docker/overlay2/07ecf9873fb63920d523ac1fb2c171ba8bf4e323ae1fcca4a006d029b25aedb8/diff:/var/lib/docker/overlay2/7b42f2e1c090b7e0ea206b2d57c810fc1259c0ffa3c654ef1f5f86b55763cd34/diff:/var/lib/docker/overlay2/b99dc50097ac05cbccc9d971795e5f720416e435b9b2f3c0dc521e600059b341/diff:/var/lib/docker/overlay2/2d970121c8a84f2a1a41b44e5dcb9ef20f6d1e138fc3074723cec3eb70b458ce/diff",
+                "MergedDir": "/var/lib/docker/overlay2/4de9b2b601378ca61d6040e8bc1ad310879db50519c1f3d85205b654dadf1eff/merged",
+                "UpperDir": "/var/lib/docker/overlay2/4de9b2b601378ca61d6040e8bc1ad310879db50519c1f3d85205b654dadf1eff/diff",
+                "WorkDir": "/var/lib/docker/overlay2/4de9b2b601378ca61d6040e8bc1ad310879db50519c1f3d85205b654dadf1eff/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "57650e5dc21e",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": true,
+            "OpenStdin": true,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305",
+                "PYTHON_VERSION=3.12.1",
+                "PYTHON_PIP_VERSION=23.2.1",
+                "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/049c52c665e8c5fd1751f942316e0a5c777d304f/public/get-pip.py",
+                "PYTHON_GET_PIP_SHA256=7cfd4bdc4d475ea971f1c0710a5953bcc704d171f83c797b9529d9974502fcc6"
+            ],
+            "Cmd": [
+                "python3"
+            ],
+            "Image": "python",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "a0819ea156ddbba7ae9a637b4d806a2f50bc4e61f51f9ca617a44836feed3b36",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {},
+            "SandboxKey": "/var/run/docker/netns/a0819ea156dd",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "2642d542bc5f210c5f0933dfea723c1493c06721669343672230a92041617eb6",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "02:42:ac:11:00:02",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "02:42:ac:11:00:02",
+                    "NetworkID": "c7e4953a17752c39d0b3d46848a6a77bc48c4bb57db0f2b3fc3ebb092e8390ca",
+                    "EndpointID": "2642d542bc5f210c5f0933dfea723c1493c06721669343672230a92041617eb6",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]
+
+C:\Users\ASUS1>docker run --name javaContainer -it -d amazoncorreto
+Unable to find image 'amazoncorreto:latest' locally
+^C
+C:\Users\ASUS1>docker images
+REPOSITORY                 TAG       IMAGE ID       CREATED        SIZE
+welcome-to-docker          latest    501838fceaa0   3 days ago     226MB
+amazoncorretto             latest    7d415d1e44b0   12 days ago    351MB
+mysql                      latest    56b21e040954   2 weeks ago    632MB
+amazoncorretto             17        9a79368b7d32   2 weeks ago    466MB
+python                     latest    86ac1e3337a9   6 weeks ago    1.02GB
+docker/welcome-to-docker   latest    c1f619b6477e   2 months ago   18.6MB
+hello-world                latest    d2c94e258dcb   9 months ago   13.3kB
+
+C:\Users\ASUS1>docker run --name javaContainer -it -d amazoncorretto
+9291059cd52e1f0c903ad1689b0832915cba1f7e083d810a5b65c5eaa2e06678
+
+C:\Users\ASUS1>docker ps
+CONTAINER ID   IMAGE            COMMAND       CREATED         STATUS         PORTS     NAMES
+9291059cd52e   amazoncorretto   "/bin/bash"   7 seconds ago   Up 3 seconds             javaContainer
+57650e5dc21e   python           "python3"     6 minutes ago   Up 6 minutes             pythonContainer1
+
+C:\Users\ASUS1>docker exec -it 9291059cd52e
+"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Execute a command in a running container
+
+C:\Users\ASUS1>docker exec -it javaContainer jshell
+OCI runtime exec failed: exec failed: unable to start container process: exec: "jshell": executable file not found in $PATH: unknown
+
+C:\Users\ASUS1>docker exec -it javaContainer jshell
+OCI runtime exec failed: exec failed: unable to start container process: exec: "jshell": executable file not found in $PATH: unknown
+
+C:\Users\ASUS1>docker exec -it javaContainer /bin/bash
+bash-4.2# System.out.println("shiva")
+bash: syntax error near unexpected token `"shiva"'
+bash-4.2# exit
+exit
+
+C:\Users\ASUS1>docker exec -it javaContainer /bin/bash
+bash-4.2# jshell
+bash: jshell: command not found
+bash-4.2# ls
+bin  boot  dev  etc  home  lib  lib64  local  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+bash-4.2# exit
+exit
+
+C:\Users\ASUS1>docker images
+REPOSITORY                 TAG       IMAGE ID       CREATED        SIZE
+welcome-to-docker          latest    501838fceaa0   3 days ago     226MB
+amazoncorretto             latest    7d415d1e44b0   12 days ago    351MB
+mysql                      latest    56b21e040954   2 weeks ago    632MB
+amazoncorretto             17        9a79368b7d32   2 weeks ago    466MB
+python                     latest    86ac1e3337a9   6 weeks ago    1.02GB
+docker/welcome-to-docker   latest    c1f619b6477e   2 months ago   18.6MB
+hello-world                latest    d2c94e258dcb   9 months ago   13.3kB
+
+C:\Users\ASUS1>docker run --name mysqlDb -env MYSQL_ROOT_PASSWORD=root -d mysql
+docker: invalid reference format: repository name must be lowercase.
+See 'docker run --help'.
+
+C:\Users\ASUS1>docker run --name mysqldb -env MYSQL_ROOT_PASSWORD=root -d mysql
+docker: invalid reference format: repository name must be lowercase.
+See 'docker run --help'.
+
+C:\Users\ASUS1>docker run --name mysqldb -env MYSQL_ROOT_PASSWORD=root -d mysql
+docker: invalid reference format: repository name must be lowercase.
+See 'docker run --help'.
+
+C:\Users\ASUS1>docker run --name mysqldb -e MYSQL_ROOT_PASSWORD=root -d mysql
+0382d7ef14dbcccd8ed2c8296f8c41fb1d9dd3c826ee8879d103c81e01e36315
+
+C:\Users\ASUS1>docker ps
+CONTAINER ID   IMAGE            COMMAND                  CREATED          STATUS          PORTS
+NAMES
+0382d7ef14db   mysql            "docker-entrypoint.s…"   8 seconds ago    Up 6 seconds    3306/tcp, 33060/tcp   mysqldb
+9291059cd52e   amazoncorretto   "/bin/bash"              10 minutes ago   Up 10 minutes
+javaContainer
+57650e5dc21e   python           "python3"                17 minutes ago   Up 17 minutes
+pythonContainer1
+
+C:\Users\ASUS1>docker mysql inspect
+docker: 'mysql' is not a docker command.
+See 'docker --help'
+
+C:\Users\ASUS1>docker inspect mysql
+[
+    {
+        "Id": "b79c1d2a8c1a09e9fae473630fd01e2a07219c2184f1bbc85c49de68d0645ff3",
+        "Created": "2024-02-01T21:08:17.286884331Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "mysqld"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 1,
+            "Error": "",
+            "StartedAt": "2024-02-01T21:08:22.669707194Z",
+            "FinishedAt": "2024-02-01T21:08:24.029977533Z"
+        },
+        "Image": "sha256:56b21e040954f63d922725c2d049cf2a0dfbad5522e8d3e14c36f1823ab3f5e5",
+        "ResolvConfPath": "/var/lib/docker/containers/b79c1d2a8c1a09e9fae473630fd01e2a07219c2184f1bbc85c49de68d0645ff3/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/b79c1d2a8c1a09e9fae473630fd01e2a07219c2184f1bbc85c49de68d0645ff3/hostname",
+        "HostsPath": "/var/lib/docker/containers/b79c1d2a8c1a09e9fae473630fd01e2a07219c2184f1bbc85c49de68d0645ff3/hosts",
+        "LogPath": "/var/lib/docker/containers/b79c1d2a8c1a09e9fae473630fd01e2a07219c2184f1bbc85c49de68d0645ff3/b79c1d2a8c1a09e9fae473630fd01e2a07219c2184f1bbc85c49de68d0645ff3-json.log",
+        "Name": "/mysql",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                36,
+                112
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "host",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/32e948b013de62693a3ed6a389c7627a93857f88ff927c0553bbf3786138ed8d-init/diff:/var/lib/docker/overlay2/4139e9253322e4f633f90441e6cda1ecec29887b9156f83b8484a8374f1e605b/diff:/var/lib/docker/overlay2/8b80f9d5b95712f99a60d4c9a8cf3632c381f5bab9dc78b18bbbac66207e8812/diff:/var/lib/docker/overlay2/d7d6d95a9d4db824217e1df09175539abd57e6015d5fcf273875e2b663ff8fbc/diff:/var/lib/docker/overlay2/e43b33d0f08e5a245d69349396ef7f293c81f8dee7be618c70ef8f21578499ca/diff:/var/lib/docker/overlay2/b1533c093fedaa2af2db8d946bf2963e6831dbdb1aa5521a85ed39ecd1c018d4/diff:/var/lib/docker/overlay2/413b324c49fa2c84a3d129042b1e130a13d261c246a982ddebf95b22b7522a91/diff:/var/lib/docker/overlay2/f2bd86bff51999dcfad97cb07b68bb6cf5caf91a9f9affeaff0fb47206619b9b/diff:/var/lib/docker/overlay2/7e6e8dabdbd2285f0d623532af6887a9afdfffafb35b0297a8a2864bec47cdf7/diff:/var/lib/docker/overlay2/80929cbd84b4ec080cd8da91070500b6a2988376341d12db5f38efd233df0245/diff:/var/lib/docker/overlay2/7fa8c7fb9960119f1f462988cfeececbaffeb390680bc5501b70cf62fac0aaa1/diff",
+                "MergedDir": "/var/lib/docker/overlay2/32e948b013de62693a3ed6a389c7627a93857f88ff927c0553bbf3786138ed8d/merged",
+                "UpperDir": "/var/lib/docker/overlay2/32e948b013de62693a3ed6a389c7627a93857f88ff927c0553bbf3786138ed8d/diff",
+                "WorkDir": "/var/lib/docker/overlay2/32e948b013de62693a3ed6a389c7627a93857f88ff927c0553bbf3786138ed8d/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "c47960d768e18ac2964c5f3bbd449d00e7a4a901da81a7e48b8131f5b681890b",
+                "Source": "/var/lib/docker/volumes/c47960d768e18ac2964c5f3bbd449d00e7a4a901da81a7e48b8131f5b681890b/_data",
+                "Destination": "/var/lib/mysql",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "b79c1d2a8c1a",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "3306/tcp": {},
+                "33060/tcp": {}
+            },
+            "Tty": true,
+            "OpenStdin": true,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.16",
+                "MYSQL_MAJOR=innovation",
+                "MYSQL_VERSION=8.3.0-1.el8",
+                "MYSQL_SHELL_VERSION=8.3.0-1.el8"
+            ],
+            "Cmd": [
+                "mysqld"
+            ],
+            "Image": "mysql",
+            "Volumes": {
+                "/var/lib/mysql": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "30b0bbdfd157660144a821e4e1415a32c96050554174187dc8f176539ed96183",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {},
+            "SandboxKey": "/var/run/docker/netns/30b0bbdfd157",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "",
+                    "NetworkID": "c7e4953a17752c39d0b3d46848a6a77bc48c4bb57db0f2b3fc3ebb092e8390ca",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]
+
+C:\Users\ASUS1>docker exec -it mysqldb bash
+bash-4.4# mysql -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.3.0 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.01 sec)
+
+mysql> create databases;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'databases' at line 1
+mysql> create databases mydb
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'databases mydb' at line 1
+mysql> create database mydb;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> create table test(id int);
+ERROR 1046 (3D000): No database selected
+mysql> use mydb;
+Database changed
+mysql> create table test(id int);
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> show tables;
++----------------+
+| Tables_in_mydb |
++----------------+
+| test           |
++----------------+
+1 row in set (0.00 sec)
+
+mysql> docker pull ngnix;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'docker pull ngnix' at line 1
+mysql> docker pull ngnix
+    -> exit
+    -> ^C
+mysql> exit
+Bye
+bash-4.4# exit
+exit
+
+C:\Users\ASUS1>docker pul ngnix;
+docker: 'pul' is not a docker command.
+See 'docker --help'
+
+C:\Users\ASUS1>docker pul ngnix
+docker: 'pul' is not a docker command.
+See 'docker --help'
+
+C:\Users\ASUS1>docker pull ngnix
+Using default tag: latest
+Error response from daemon: pull access denied for ngnix, repository does not exist or may require 'docker login': denied: requested access to the resource is denied
+
+C:\Users\ASUS1>docker search ngnix
+NAME                                   DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+userxy2015/ngnix                       ngnix                                           17
+theburi/ngnix                          ngnix                                           0
+sitek/ngnix-vsftpd                     ngnix-vsftpd                                    1                    [OK]ssvreddy/ngnix                                                                         0
+alamalhoda/ngnix                                                                       0
+motork/ngnix-static-app                Nginx with config for a static js app           0
+hamropatrorepo/ngnix-reverse-proxy                                                     0
+bharath2012/ngnix                                                                      0
+afzal/ngnix_rate_limit                 ngnix rate limit examples                       0
+silvade/ngnix-static                   ngnix docker image  with ubuntu                 0
+motork/ngnix-unprivileged-static-app   Image for static app without root user          0
+sushanth53/ngnix_server                ngnix server                                    0
+caubequay00/ngnix-heroku               Already set listen port of nginx to $PORT  o…   0
+ludwringliccien/ngnix-php7.1           ngnix-php7.1                                    1                    [OK]bguruprasad/ngnix-print-hostname       ngnix-print-hostname                            0
+snehagupta83/ngnix                     Test setup                                      0
+agualbbus/ngnix-php-proxy                                                              0
+sanghaiakshay/ngnix_https_webserver                                                    0
+lundysok/ngnix-reverse-proxy-staging                                                   0
+jenorish/ngnix                                                                         0
+lundysok/ngnix-reverse-proxy                                                           0
+venkateshs2006/ngnix-php-fpm-laravel                                                   0
+covenant/ngnix                                                                         0
+sunlitweb/ngnix                                                                        0
+starlkj/ngnix                          tde test                                        0                    [OK]
+C:\Users\ASUS1>docker pull ngnix
+Using default tag: latest
+Error response from daemon: pull access denied for ngnix, repository does not exist or may require 'docker login': denied: requested access to the resource is denied
+
+C:\Users\ASUS1>docker pull ngnix
+Using default tag: latest
+Error response from daemon: pull access denied for ngnix, repository does not exist or may require 'docker login': denied: requested access to the resource is denied
+
+C:\Users\ASUS1>docker pull userxy2015
+Using default tag: latest
+Error response from daemon: pull access denied for userxy2015, repository does not exist or may require 'docker login': denied: requested access to the resource is denied
+
+C:\Users\ASUS1>docker pull ngnix
+Using default tag: latest
+Error response from daemon: pull access denied for ngnix, repository does not exist or may require 'docker login': denied: requested access to the resource is denied
+
+C:\Users\ASUS1>docker pull ngnix
+Using default tag: latest
+Error response from daemon: pull access denied for ngnix, repository does not exist or may require 'docker login': denied: requested access to the resource is denied
+
+C:\Users\ASUS1>docker pull hello-world
+Using default tag: latest
+latest: Pulling from library/hello-world
+Digest: sha256:4bd78111b6914a99dbc560e6a20eab57ff6655aea4a80c50b0c5491968cbc2e6
+Status: Image is up to date for hello-world:latest
+docker.io/library/hello-world:latest
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview hello-world
+
+C:\Users\ASUS1>docker run ngnix
+Unable to find image 'ngnix:latest' locally
+docker: Error response from daemon: pull access denied for ngnix, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.
+See 'docker run --help'.
+
+C:\Users\ASUS1>docker pull theburi/ngnix
+Using default tag: latest
+latest: Pulling from theburi/ngnix
+357ea8c3d80b: Downloading [===============>                                   ]  16.25MB/51.37MB
+0fc04568277e: Downloading [===================================>               ]  14.43MB/20.05MB
+0bed9719ddcb: Download complete
+d2269f7ef54c: Download complete
+2962c7606990: Download complete
+6a713b8b9690: Waiting
+9858b1ef594e: Waiting
+^C
+C:\Users\ASUS1>docker pull userxy2015/ngnix
+Using default tag: latest
+latest: Pulling from userxy2015/ngnix
+386a066cd84a: Pull complete
+386dc9762af9: Pull complete
+d685e39ac8a4: Pull complete
+6671c34904fe: Pull complete
+806f5d771082: Pull complete
+51e9197dc87e: Pull complete
+35246d4076b8: Pull complete
+Digest: sha256:c34ff007f97739e1ed334211cd19c7d5219b86aa909474d11e1fbfc6156172ea
+Status: Downloaded newer image for userxy2015/ngnix:latest
+docker.io/userxy2015/ngnix:latest
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview userxy2015/ngnix
+
+C:\Users\ASUS1>docker run --namve ngnixServer -d -p 8080:80 ngnix
+unknown flag: --namve
+See 'docker run --help'.
+
+C:\Users\ASUS1>docker run --name ngnixServer -d -p 8080:80 ngnix
+Unable to find image 'ngnix:latest' locally
+docker: Error response from daemon: pull access denied for ngnix, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.
+See 'docker run --help'.
+
+C:\Users\ASUS1>docker images
+REPOSITORY          TAG       IMAGE ID       CREATED        SIZE
+welcome-to-docker   latest    501838fceaa0   3 days ago     226MB
+amazoncorretto      latest    7d415d1e44b0   12 days ago    351MB
+mysql               latest    56b21e040954   2 weeks ago    632MB
+python              latest    86ac1e3337a9   6 weeks ago    1.02GB
+hello-world         latest    d2c94e258dcb   9 months ago   13.3kB
+userxy2015/ngnix    latest    17a92fa0c614   7 years ago    182MB
+
+C:\Users\ASUS1>docker run --name ngnixServer -d -p 8080:80 userxy2015/ngnix
+9794c072ba9a712070be5e475431a3dbf517d9f24da0c3646a45d8831db8d528
+docker: Error response from daemon: Ports are not available: exposing port TCP 0.0.0.0:8080 -> 0.0.0.0:0: listen tcp 0.0.0.0:8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+
+C:\Users\ASUS1>docker run --name ngnixServer -d -p 8080:90 userxy2015/ngnix
+docker: Error response from daemon: Conflict. The container name "/ngnixServer" is already in use by container "9794c072ba9a712070be5e475431a3dbf517d9f24da0c3646a45d8831db8d528". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+
+C:\Users\ASUS1>docker ps
+CONTAINER ID   IMAGE            COMMAND       CREATED          STATUS          PORTS     NAMES
+9291059cd52e   amazoncorretto   "/bin/bash"   24 minutes ago   Up 23 minutes             javaContainer
+57650e5dc21e   python           "python3"     30 minutes ago   Up 30 minutes             pythonContainer1
+
+C:\Users\ASUS1>docker run --name ngnixServer -d -p 8080:80 userxy2015/ngnix
+docker: Error response from daemon: Conflict. The container name "/ngnixServer" is already in use by container "9794c072ba9a712070be5e475431a3dbf517d9f24da0c3646a45d8831db8d528". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+
+C:\Users\ASUS1>docker run --name ngnixSe -d -p 8080:80 userxy2015/ngnix
+332bf35f4ca8bd58c7a314c8ae396539cddeef17020d8ec9835386bdbc545c9e
+docker: Error response from daemon: Ports are not available: exposing port TCP 0.0.0.0:8080 -> 0.0.0.0:0: listen tcp 0.0.0.0:8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+
+C:\Users\ASUS1>docker pull httpd
+Using default tag: latest
+latest: Pulling from library/httpd
+c57ee5000d61: Pull complete
+ef22398cad3c: Pull complete
+4f4fb700ef54: Pull complete
+f420b40fd7be: Pull complete
+ea4892b1a58d: Pull complete
+1fe3871b50ff: Pull complete
+Digest: sha256:5ae0ba360c294fa8153a14ebcbdfa25bdc70f681f50da9c9fe82c72271c8154c
+Status: Downloaded newer image for httpd:latest
+docker.io/library/httpd:latest
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview httpd
+
+C:\Users\ASUS1>docker images
+REPOSITORY          TAG       IMAGE ID       CREATED        SIZE
+welcome-to-docker   latest    501838fceaa0   3 days ago     226MB
+amazoncorretto      latest    7d415d1e44b0   12 days ago    351MB
+mysql               latest    56b21e040954   2 weeks ago    632MB
+httpd               latest    59bcd61b45fd   2 weeks ago    167MB
+python              latest    86ac1e3337a9   6 weeks ago    1.02GB
+hello-world         latest    d2c94e258dcb   9 months ago   13.3kB
+userxy2015/ngnix    latest    17a92fa0c614   7 years ago    182MB
+
+C:\Users\ASUS1>docker run --name httpdServer -d -p  8080:80 httpd
+a75005dc868d68801f799d9797d5596dd6855a80096356461a2e4d2ad493d9fc
+docker: Error response from daemon: Ports are not available: exposing port TCP 0.0.0.0:8080 -> 0.0.0.0:0: listen tcp 0.0.0.0:8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+
+C:\Users\ASUS1>docker run --name httpdServer -d -p  80:80 httpd
+docker: Error response from daemon: Conflict. The container name "/httpdServer" is already in use by container "a75005dc868d68801f799d9797d5596dd6855a80096356461a2e4d2ad493d9fc". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+
+C:\Users\ASUS1>docker run --name httpdServ -d -p  80:80 httpd
+d418a4de38cb6085abb483c665e749ee495369d34891bbc34c724ef19f501747
+
+C:\Users\ASUS1>docker ps
+CONTAINER ID   IMAGE            COMMAND              CREATED          STATUS          PORTS                NAMESd418a4de38cb   httpd            "httpd-foreground"   17 seconds ago   Up 13 seconds   0.0.0.0:80->80/tcp   httpdServ
+9291059cd52e   amazoncorretto   "/bin/bash"          28 minutes ago   Up 28 minutes                        javaContainer
+57650e5dc21e   python           "python3"            34 minutes ago   Up 34 minutes                        pythonContainer1
+
+C:\Users\ASUS1>docker run --name ngnixSe -d -p 8081:80 userxy2015/ngnix
+docker: Error response from daemon: Conflict. The container name "/ngnixSe" is already in use by container "332bf35f4ca8bd58c7a314c8ae396539cddeef17020d8ec9835386bdbc545c9e". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+
+C:\Users\ASUS1>docker run --name ngnixSe -d -p 8081:81 userxy2015/ngnix
+docker: Error response from daemon: Conflict. The container name "/ngnixSe" is already in use by container "332bf35f4ca8bd58c7a314c8ae396539cddeef17020d8ec9835386bdbc545c9e". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+
+C:\Users\ASUS1>docker run --name ngnixSee -d -p 8081:80 userxy2015/ngnix
+46e5f7644cd34b49c328a96cedb6793d90fbb06b50d723a801504dc3af0f0f71
+
+C:\Users\ASUS1>docker ps
+CONTAINER ID   IMAGE            COMMAND              CREATED          STATUS          PORTS                NAMESd418a4de38cb   httpd            "httpd-foreground"   2 minutes ago    Up 2 minutes    0.0.0.0:80->80/tcp   httpdServ
+9291059cd52e   amazoncorretto   "/bin/bash"          30 minutes ago   Up 30 minutes                        javaContainer
+57650e5dc21e   python           "python3"            36 minutes ago   Up 36 minutes                        pythonContainer1
+
+C:\Users\ASUS1>docker stop pythonContainer1
+pythonContainer1
+
+C:\Users\ASUS1>docker stop javaContainer
+javaContainer
+
+C:\Users\ASUS1>docker ps
+CONTAINER ID   IMAGE     COMMAND              CREATED         STATUS         PORTS                NAMES
+d418a4de38cb   httpd     "httpd-foreground"   4 minutes ago   Up 4 minutes   0.0.0.0:80->80/tcp   httpdServ
+
+C:\Users\ASUS1>docker stop httpServ
+Error response from daemon: No such container: httpServ
+
+C:\Users\ASUS1>docker stop httpdServ
+httpdServ
+
+C:\Users\ASUS1>docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+C:\Users\ASUS1>docker ps -a
+CONTAINER ID   IMAGE              COMMAND                  CREATED          STATUS                          PORTS     NAMES
+46e5f7644cd3   userxy2015/ngnix   "nginx -g 'daemon of…"   5 minutes ago    Exited (1) 5 minutes ago                  ngnixSee
+d418a4de38cb   httpd              "httpd-foreground"       7 minutes ago    Exited (0) About a minute ago             httpdServ
+9291059cd52e   amazoncorretto     "/bin/bash"              35 minutes ago   Exited (137) 2 minutes ago                javaContainer
+57650e5dc21e   python             "python3"                42 minutes ago   Exited (137) 3 minutes ago                pythonContainer1
+
+C:\Users\ASUS1>docker rm 46e5f7644cd3
+46e5f7644cd3
+
+C:\Users\ASUS1>docker ps -a
+CONTAINER ID   IMAGE            COMMAND              CREATED          STATUS                       PORTS     NAMES
+d418a4de38cb   httpd            "httpd-foreground"   7 minutes ago    Exited (0) 2 minutes ago               httpdServ
+9291059cd52e   amazoncorretto   "/bin/bash"          35 minutes ago   Exited (137) 3 minutes ago             javaContainer
+57650e5dc21e   python           "python3"            42 minutes ago   Exited (137) 3 minutes ago             pythonContainer1
+
+C:\Users\ASUS1>docker rm d418a4de38cb
+d418a4de38cb
+
+C:\Users\ASUS1>docker ps -a
+CONTAINER ID   IMAGE            COMMAND       CREATED          STATUS                       PORTS     NAMES
+9291059cd52e   amazoncorretto   "/bin/bash"   36 minutes ago   Exited (137) 3 minutes ago             javaContainer
+57650e5dc21e   python           "python3"     42 minutes ago   Exited (137) 3 minutes ago             pythonContainer1
+
+C:\Users\ASUS1>docker rm 9291059cd52e
+9291059cd52e
+
+C:\Users\ASUS1>docker rm 9291059cd52e
+Error response from daemon: No such container: 9291059cd52e
+
+C:\Users\ASUS1>docker ps -a
+CONTAINER ID   IMAGE     COMMAND     CREATED          STATUS                       PORTS     NAMES
+57650e5dc21e   python    "python3"   43 minutes ago   Exited (137) 4 minutes ago             pythonContainer1
+
+C:\Users\ASUS1>docker rm 57650e5dc21e
+57650e5dc21e
+
+C:\Users\ASUS1>docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+C:\Users\ASUS1>docker images
+REPOSITORY          TAG       IMAGE ID       CREATED        SIZE
+welcome-to-docker   latest    501838fceaa0   3 days ago     226MB
+amazoncorretto      latest    7d415d1e44b0   12 days ago    351MB
+mysql               latest    56b21e040954   2 weeks ago    632MB
+httpd               latest    59bcd61b45fd   2 weeks ago    167MB
+python              latest    86ac1e3337a9   6 weeks ago    1.02GB
+hello-world         latest    d2c94e258dcb   9 months ago   13.3kB
+userxy2015/ngnix    latest    17a92fa0c614   7 years ago    182MB
+
+C:\Users\ASUS1>docker rmi amazoncorretto
+Untagged: amazoncorretto:latest
+Untagged: amazoncorretto@sha256:2b9c43f94cd5e2f97d7af64f5865804a2d29ed5c804fab4e3c4d83ffe1fef2a8
+Deleted: sha256:7d415d1e44b0bd167c061b96ea48739026edf4491609db2dc289fbb997cde937
+Deleted: sha256:9bb82a2da1a5dc9f88f612d97eecf0719913388489ad1b8ba31ae734ea66746e
+Deleted: sha256:d9907b0445f99536393e97b14cedc84631070353d67727d1006de12c9a2a6fa8
+
+C:\Users\ASUS1>docker images
+REPOSITORY          TAG       IMAGE ID       CREATED        SIZE
+welcome-to-docker   latest    501838fceaa0   3 days ago     226MB
+mysql               latest    56b21e040954   2 weeks ago    632MB
+httpd               latest    59bcd61b45fd   2 weeks ago    167MB
+python              latest    86ac1e3337a9   6 weeks ago    1.02GB
+hello-world         latest    d2c94e258dcb   9 months ago   13.3kB
+userxy2015/ngnix    latest    17a92fa0c614   7 years ago    182MB
+
+C:\Users\ASUS1>docker rmi mysql
+Untagged: mysql:latest
+Untagged: mysql@sha256:d7c20c5ba268c558f4fac62977f8c7125bde0630ff8946b08dde44135ef40df3
+Deleted: sha256:56b21e040954f63d922725c2d049cf2a0dfbad5522e8d3e14c36f1823ab3f5e5
+Deleted: sha256:850a536995ab16f364a5167d34a589063d0a736e3bf1c544cf09b2d83de2bf3a
+Deleted: sha256:a5b2fece3487325ebc841aa2a226c03b1fb50941d5bae4a29f629780afdbed98
+Deleted: sha256:dcd62d642a68ac970ca97af6323809e75dd38ef45935c0313b695ef3fb5502ce
+Deleted: sha256:47ec7ab17131fed4387691d6d57bd036f9d5ae82258436bb4c18393ad41c0ae7
+Deleted: sha256:1d57bbd88b90eec7e99fd223fe93c87eb2d857cfdaf285bd536a15d72cecc429
+Deleted: sha256:0ef594f223865d17335bcf3a8d54f5a694819c2b2063ffc6e6a38c5b8a27bff5
+Deleted: sha256:f654bd4e2a7a9ef7019d95f9db29257794729914b1b34de489b8cd07b63e8fdd
+Deleted: sha256:fd211b6e88e5804da98fe9d915dbc2156efb5dec79768e49d686bc492dcf7346
+Deleted: sha256:877ce11a550f8c6b5212df067673c77c9a9d6e6678109d8423a09ddefa55d0fb
+Deleted: sha256:39d129b028b4ace2c0e701d43ea9027677dc12650379615b53ae90c53f2f502c
+
+C:\Users\ASUS1>docker images
+REPOSITORY          TAG       IMAGE ID       CREATED        SIZE
+welcome-to-docker   latest    501838fceaa0   3 days ago     226MB
+httpd               latest    59bcd61b45fd   2 weeks ago    167MB
+python              latest    86ac1e3337a9   6 weeks ago    1.02GB
+hello-world         latest    d2c94e258dcb   9 months ago   13.3kB
+userxy2015/ngnix    latest    17a92fa0c614   7 years ago    182MB
+
+C:\Users\ASUS1>docker rmi httpd
+Untagged: httpd:latest
+Untagged: httpd@sha256:5ae0ba360c294fa8153a14ebcbdfa25bdc70f681f50da9c9fe82c72271c8154c
+Deleted: sha256:59bcd61b45fd94a7f19314d259effc3da8b42a0e157263af2246a22c07e96595
+Deleted: sha256:93fa866339bf3706ef00e42e492a4556c1700d2ee8c0e11898f413f13d0b6eff
+Deleted: sha256:314e706d4e17551bf069fbaa820e534914927a3da3d85bff437feb9565512512
+Deleted: sha256:7154a59f53e1142dcc59619c79662c0958d0669dc01d29bbdfd89ca3c54d01ab
+Deleted: sha256:fcf298244b58fe6e8ffc56798a2117062ab8eab3e786824871e6978f31a31c87
+Deleted: sha256:52729c98f9892f98242389453d460c8737d34d97b3b5f82bcc1f2ce2a7b323d1
+Deleted: sha256:fb1bd2fc52827db4ce719cc1aafd4a035d68bc71183b3bc39014f23e9e5fa256
+
+C:\Users\ASUS1>docker rmi python
+Untagged: python:latest
+Untagged: python@sha256:a3d69b8412f7068fd060ccc7e175825713d5a767e1e14753e75bce6f746c8a7e
+Deleted: sha256:86ac1e3337a9f9f5f6cac27a9482181bf1fa5c66982830439a6cf52a9b214df0
+Deleted: sha256:3ca44c07283db1c1565ed7fd1582b0e6439ab98fd52119d3cf436fbcac22a487
+Deleted: sha256:7026dcb3917f6b5af17b84a59e9c3d52cb9d50e8fa2c294f81a118bfb63d6df1
+Deleted: sha256:8650c790e945033b33fab47ecd137264bdab05d3906ef7a016ffc4069f825363
+Deleted: sha256:600200f8bb7297fba0f348da3109cc40546c47a6f6758c82a3f00396bf953113
+Deleted: sha256:23a48a1769fceb131d72ee7fdb7767f67c6f0881a5f7096bff23db328c85b4a7
+Deleted: sha256:4f2c96dad1b13798030863ee1e6d23869a8c831ca9742e145c0682076474b01d
+Deleted: sha256:d255498e8d5c64102c0acb617d5e986a5f88b084121214290549836b3a3efebf
+Deleted: sha256:1dae5147cd293b16e7b8c93f778dbf7ceff5c81c2b2704d3e5a98d331cdbe0ab
+
+C:\Users\ASUS1>docker rmi userxy2015/ngnix
+Untagged: userxy2015/ngnix:latest
+Untagged: userxy2015/ngnix@sha256:c34ff007f97739e1ed334211cd19c7d5219b86aa909474d11e1fbfc6156172ea
+Deleted: sha256:17a92fa0c6148af3a469ae215de5f337e7f4377612e551f76dcaee632e8c5996
+Deleted: sha256:c80a6c870a76f657d4813009e3e98bbdabb280124fc1763af74bf1d768013cab
+Deleted: sha256:6e390f224a664bcc7d335cfdb207d57d7ff58076c24be936d60faac29b21a96f
+Deleted: sha256:0a5ff97f3ebd8f66d1b8a2dcddeddbee5abcc0c6186aeb870768479e18b8e124
+Deleted: sha256:105067b92191ba4127affd442e305eea529f8597e086496e38c1b29f80745b9e
+Deleted: sha256:21976f5d6f037350c076d6974b2ac97777c962869d5511855170dc5c926d5aac
+Deleted: sha256:f9719c3716279b47727a51595d1482506be469c581383cb529f4005ba9bf2aeb
+Deleted: sha256:fe4c16cbf7a4c70a5462654cf2c8f9f69778db280f235229bd98cf8784e878e4
+
+C:\Users\ASUS1>docker images
+REPOSITORY          TAG       IMAGE ID       CREATED        SIZE
+welcome-to-docker   latest    501838fceaa0   3 days ago     226MB
+hello-world         latest    d2c94e258dcb   9 months ago   13.3kB
+
+C:\Users\ASUS1>docker run --name welcome -it -d welcome-to-docker
+1530e3117394188795a577b7ade0456ee0330bbabc375218d0ba1a32227106ca
+
+C:\Users\ASUS1>docker ps
+CONTAINER ID   IMAGE               COMMAND                  CREATED         STATUS         PORTS      NAMES
+1530e3117394   welcome-to-docker   "docker-entrypoint.s…"   6 seconds ago   Up 3 seconds   3000/tcp   welcome
+
+C:\Users\ASUS1>docker restart welcome
+welcome
+
+C:\Users\ASUS1>docker ps
+CONTAINER ID   IMAGE               COMMAND                  CREATED          STATUS         PORTS      NAMES
+1530e3117394   welcome-to-docker   "docker-entrypoint.s…"   44 seconds ago   Up 5 seconds   3000/tcp   welcome
+
+C:\Users\ASUS1>docker stop welcome
+welcome
+
+C:\Users\ASUS1>docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+C:\Users\ASUS1>docker restart welcome
+welcome
+
+C:\Users\ASUS1>docker ps
+CONTAINER ID   IMAGE               COMMAND                  CREATED              STATUS         PORTS      NAMES
+1530e3117394   welcome-to-docker   "docker-entrypoint.s…"   About a minute ago   Up 5 seconds   3000/tcp   welcome
+
+C:\Users\ASUS1>docker stop welcomme
+Error response from daemon: No such container: welcomme
+
+C:\Users\ASUS1>docker stop welcome
+welcome
+
+C:\Users\ASUS1>docker login
+Authenticating with existing credentials...
+Login Succeeded
+
+C:\Users\ASUS1>docker push welcome-to-docker
+Using default tag: latest
+The push refers to repository [docker.io/library/welcome-to-docker]
+d12f0f41ad20: Preparing
+3640e8136959: Preparing
+c7a3158619ca: Preparing
+314e13f7aa7b: Preparing
+37940d75b8d4: Preparing
+b325b33b9813: Waiting
+4a0d315ad53e: Waiting
+29e213bad130: Waiting
+d4fc045c9e3a: Waiting
+denied: requested access to the resource is denied
+
+C:\Users\ASUS1>docker commit welcome-to-docker
+Error response from daemon: No such container: welcome-to-docker
+
+C:\Users\ASUS1>docker restart welcome
+welcome
+
+C:\Users\ASUS1>docker commit welcome-to-docker
+Error response from daemon: No such container: welcome-to-docker
+
+C:\Users\ASUS1>docker commit welcome
+sha256:d58b569dbb10f5ac836d29e0c104869c1edec8b31fb3025d40b678a2282f204b
+
+C:\Users\ASUS1>docker push welcome
+Using default tag: latest
+The push refers to repository [docker.io/library/welcome]
+An image does not exist locally with the tag: welcome
+
+C:\Users\ASUS1>docker push welcome-to-docker
+Using default tag: latest
+The push refers to repository [docker.io/library/welcome-to-docker]
+d12f0f41ad20: Preparing
+3640e8136959: Preparing
+c7a3158619ca: Preparing
+314e13f7aa7b: Preparing
+37940d75b8d4: Preparing
+b325b33b9813: Waiting
+4a0d315ad53e: Waiting
+29e213bad130: Waiting
+d4fc045c9e3a: Waiting
+denied: requested access to the resource is denied
+
+C:\Users\ASUS1>docker login
+Authenticating with existing credentials...
+Login Succeeded
+
+C:\Users\ASUS1>docker push welcome-to-docker
+Using default tag: latest
+The push refers to repository [docker.io/library/welcome-to-docker]
+d12f0f41ad20: Preparing
+3640e8136959: Preparing
+c7a3158619ca: Preparing
+314e13f7aa7b: Preparing
+37940d75b8d4: Preparing
+b325b33b9813: Waiting
+4a0d315ad53e: Waiting
+29e213bad130: Waiting
+d4fc045c9e3a: Waiting
+denied: requested access to the resource is denied
+
+C:\Users\ASUS1>docker copy
+docker: 'copy' is not a docker command.
+See 'docker --help'
+
+C:\Users\ASUS1>docker log
+docker: 'log' is not a docker command.
+See 'docker --help'
+
+C:\Users\ASUS1>docker logs
+"docker logs" requires exactly 1 argument.
+See 'docker logs --help'.
+
+Usage:  docker logs [OPTIONS] CONTAINER
+
+Fetch the logs of a container
+
+C:\Users\ASUS1>docker logs welcome
+ ERROR  Cannot copy server address to clipboard: Couldn't find the `xsel` binary and fallback didn't work. On Debian/Ubuntu you can install xsel with: sudo apt install xsel.
+
+   ┌────────────────────────────────────────┐
+   │                                        │
+   │   Serving!                             │
+   │                                        │
+   │   - Local:    http://localhost:3000    │
+   │   - Network:  http://172.17.0.2:3000   │
+   │                                        │
+   └────────────────────────────────────────┘
+
+
+ INFO  Gracefully shutting down. Please wait...
+ ERROR  Cannot copy server address to clipboard: Couldn't find the `xsel` binary and fallback didn't work. On Debian/Ubuntu you can install xsel with: sudo apt install xsel.
+
+   ┌────────────────────────────────────────┐
+   │                                        │
+   │   Serving!                             │
+   │                                        │
+   │   - Local:    http://localhost:3000    │
+   │   - Network:  http://172.17.0.2:3000   │
+   │                                        │
+   └────────────────────────────────────────┘
+
+
+ INFO  Gracefully shutting down. Please wait...
+ ERROR  Cannot copy server address to clipboard: Couldn't find the `xsel` binary and fallback didn't work. On Debian/Ubuntu you can install xsel with: sudo apt install xsel.
+
+   ┌────────────────────────────────────────┐
+   │                                        │
+   │   Serving!                             │
+   │                                        │
+   │   - Local:    http://localhost:3000    │
+   │   - Network:  http://172.17.0.2:3000   │
+   │                                        │
+   └────────────────────────────────────────┘
+
+
+ INFO  Gracefully shutting down. Please wait...
+ ERROR  Cannot copy server address to clipboard: Couldn't find the `xsel` binary and fallback didn't work. On Debian/Ubuntu you can install xsel with: sudo apt install xsel.
+
+   ┌────────────────────────────────────────┐
+   │                                        │
+   │   Serving!                             │
+   │                                        │
+   │   - Local:    http://localhost:3000    │
+   │   - Network:  http://172.17.0.2:3000   │
+   │                                        │
+   └────────────────────────────────────────┘
+
+
+C:\Users\ASUS1>docker volume
+
+Usage:  docker volume COMMAND
+
+Manage volumes
+
+Commands:
+  create      Create a volume
+  inspect     Display detailed information on one or more volumes
+  ls          List volumes
+  prune       Remove unused local volumes
+  rm          Remove one or more volumes
+
+Run 'docker volume COMMAND --help' for more information on a command.

@@ -1,0 +1,254 @@
+Que1)What issue does Docker address?
+a) Inconsistencies in development environments
+b) Lack of scalability in server deployment
+c) Slow internet connection
+d) Software licensing conflicts
+A1)a) Inconsistencies in development environments
+
+Que2)How does Docker improve portability?
+a) By virtualizing hardware resources
+b) Through containerization of applications
+c) By increasing server bandwidth
+d) By optimizing database queries
+A2)b) Through containerization of applications
+
+Que3)What problem does Docker solve in software deployment?
+a) Dependency management
+b) Physical hardware limitations
+c) User interface design
+d) Network security vulnerabilities
+A3)a) Dependency management
+
+Que4)What does Docker help developers avoid?
+a) Compatibility issues between libraries and frameworks
+b) Data encryption challenges
+c) DNS configuration errors
+d) Database schema inconsistencies
+A4)a) Compatibility issues between libraries and frameworks
+
+Que5)What aspect makes Docker more lightweight than traditional virtualization?
+a) Docker's use of hypervisors
+b) Docker's smaller container size
+c) Docker's reliance on hardware emulation
+d) Docker's extensive GUI capabilities
+A5)b) Docker's smaller container size
+
+Que6)What issue with virtualization does Docker address?
+a) Resource utilization efficiency
+b) Network latency
+c) Hardware compatibility
+d) File system performance
+A6)a) Resource utilization efficiency
+
+Que7)What makes Docker containers faster to start compared to virtual machines?
+a) Docker's use of nested virtualization
+b) Docker's reliance on host OS kernel
+c) Docker's compatibility with legacy systems
+d) Docker's support for distributed computing
+A7)b) Docker's reliance on host OS kernel
+
+Que8)Which factor contributes to Docker's popularity over traditional virtualization?
+a) Docker's ability to run multiple OS instances
+b) Docker's simpler management and orchestration
+c) Docker's emphasis on hardware abstraction
+d) Docker's support for hardware passthrough
+A8)b) Docker's simpler management and orchestration
+
+Que9)What is the purpose of a Dockerfile?
+a)To deploy software
+b) To define the structure of a Docker image
+c) To manage Docker volumes
+d) To monitor Docker container performance
+A9)b) To define the structure of a Docker image
+
+Que10)What analogy describes the relationship between a Docker image and a Docker container?
+a) Book and library
+b) Template and instance 
+c)  Object and Blueprint
+d)  none of these
+A10)b) Template and instance
+
+Que11)What is a Docker image used for?
+a) To execute applications
+b) To store data
+c) To create Docker containers
+d) To manage networking
+A11)c) To create Docker containers
+
+Que12)What does the Dockerfile specify?
+a) The commands to build a Docker image
+b) The commands to run a Docker container
+c) The commands to delete a Docker image
+d) The commands to manage Docker volumes
+A12)a) The commands to build a Docker image
+
+Que13)How to check version of docker?
+a)docker -v
+b)docker --version
+c)docker -version
+d)both a and b
+A13)d)both a and b
+
+Que14)How to list running containers?
+a) docker ps
+b) docker ls
+c) docker running
+d) docker status
+A14)a) docker ps
+
+Que15)How to view all containers, including non-running ones?
+a) docker all
+b) docker show
+c) docker ps -a
+d) docker inspect
+A15)c) docker ps -a
+
+Que16)How to create a container without starting it?
+a) docker make [container]
+b) docker build [container]
+c) docker create [container]
+d) docker start [container]
+A16)c) docker create [container]
+
+Que17)How to create an interactive container with pseudo-TTY?
+a) docker interact [container]
+b) docker exec [container]
+c) docker create -it [container]
+d) docker run [container]
+A17)c) docker create -it [container]
+
+Que18)Suppose you have a container named web_server, and you want to rename it to production_server. What command would you use?
+a) docker change web_server production_server
+b) docker modify web_server production_server
+c) docker rename web_server production_server
+d) docker update web_server production_server
+A18)c) docker rename web_server production_server
+
+Que19)You want to remove a Docker container from your system, but only if it's not currently running.
+What command would you use?
+a) docker clear [container]
+b) docker delete [container]
+c) docker erase [container]
+d) docker rm [container]
+A19)d) docker rm [container]
+
+Que20)You need to forcefully remove a Docker container, even if it's currently running.
+What command would you use?
+a) docker delete -f [container]
+b) docker force-remove [container]
+c) docker rm -f [container]
+d) docker expunge [container]
+A20)c) docker rm -f [container]
+
+Que21)How to view logs for a running container?
+a) docker print [container]
+b) docker display [container]
+c) docker logs [container]
+d) docker show [container]
+A21)c) docker logs [container]
+
+Que22)What command is used to search for ubuntu Docker images?
+a) docker find ubuntu
+b) docker search ubuntu
+c) docker locate ubuntu
+d) docker lookup ubuntu
+A22)b) docker search ubuntu
+
+Que23)What command is used to pull a ubuntu Docker image from a registry?
+a) docker grab ubuntu
+b) docker fetch ubuntu
+c) docker pull ubuntu
+d) docker obtain ubuntu
+A23)c) docker pull ubuntu
+
+Que24)Which command is used to create a ubuntu Docker container?
+a) docker create ubuntu
+b) docker build ubuntu
+c) docker new ubuntu
+d) docker make ubuntu
+A24)a) docker create ubuntu
+
+Que25)What command is used to start a ubuntu Docker container?
+a) docker open ubuntu
+b) docker run ubuntu
+c) docker launch ubuntu
+d) docker start ubuntu
+A25)d) docker start ubuntu
+
+Que26)Which command is used to stop a running Docker container?
+a) docker halt my_container
+b) docker stop my_container
+c) docker end my_container
+d) docker terminate my_container
+A26)b) docker stop my_container
+
+Que27)What command is used to pause a running Docker container?
+a) docker hold my_container
+b) docker freeze my_container
+c) docker suspend my_container
+d) docker pause my_container
+A27)d) docker pause my_container
+
+Que28)Which command is used to unpause a paused Docker container?
+a) docker unpause my_container
+b) docker resume my_container
+c) docker continue my_container
+d) docker play my_container
+A28)a) docker unpause my_container
+
+Que29)What command is used to block a container until others Docker container to stop?
+a) docker hold my_container
+b) docker wait my_container
+c) docker sleep my_container
+d) docker await my_container
+A29)b) docker wait my_container
+
+Que30)What command is used to restart a Docker container?
+a) docker restart my_container
+b) docker refresh my_container
+c) docker reload my_container
+d) docker start my_container
+A30)a) docker restart my_container
+
+Que31)Which command is used to create and start a Docker container in a single command?
+a) docker create [image]
+b) docker start [image]
+c) docker run [image]
+d) docker build [image]
+A31)c) docker run [image]
+
+Que32)Which command is used to build a Docker image from a Dockerfile?
+a) docker create -t [name]:[tag] [dockerfile-path]
+b) docker build -t [name]:[tag] [dockerfile-path]
+c) docker make -t [name]:[tag] [dockerfile-path]
+d) docker assemble -t [name]:[tag] [dockerfile-path]
+A32)b) docker build -t [name]:[tag] [dockerfile-path]
+
+Que33)Which flag is used to specify a name for the Docker container when using docker create?
+a) -n
+b) --name
+c) -N
+d) --container-name
+A33)b) --name
+
+Que34)Which flag is used to run a Docker container in detached mode with docker run?
+a) -d
+b) --detach
+c) -D
+d) --background
+A34)a) -d
+
+Que35)Which command is used to execute a command in a running Docker container?
+a) docker run
+b) docker exec
+c) docker start
+d) docker enter
+A35)b) docker exec
+
+Que36)What does the docker inspect command do?
+a) Displays the logs of a Docker container
+b) Provides detailed information about a Docker object
+c) Removes a Docker image from the local registry
+d) Stops a running Docker container
+A36)b) Provides detailed information about a Docker object
+

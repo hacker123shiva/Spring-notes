@@ -1,0 +1,612 @@
+Que1)What is the main purpose of developing Distributed Applications?
+a) Client-Business communication
+b) Business-Business communication
+c) Client-Client communication
+d) same as a web application
+A1)b) Business-Business communication
+
+Que2)What technology is commonly used for building web applications in Java?
+a)CORBA
+b) RMI
+c)JEE (Servlet, JSP) and Spring MVC
+d) EJB
+A2)c)JEE (Servlet, JSP) and Spring MVC
+
+Que3)What do REST services stand for?
+a)REpresentational State Transfer 
+b) Representational Stateful Services
+c)Remote Execution Stateful Transfer Services
+d)Rendering Establish  State Transfer
+A3)a)REpresentational State Transfer
+
+Que4)What does WSDL stand for in the context of Web Services?
+a)Web Service Description Language
+b) Web Services Design Language
+c)Web Server Development Language
+d) Web System Definition Language
+A4) a)Web Service Description Language
+
+Que5)What is the primary challenge with SOAP-based Web Services regarding interoperability?
+a) Not supported by Java
+b) They only support XML.
+c)  Only Support JSON formate
+d) They are platform-independent.
+A5)b) They only support XML
+
+Que6)Which of the following is NOT a principle of REST Architecture?
+a) Unique Address
+b) Stateful Communication
+c)Media Representation
+d)Uniform Interface
+A6)b) Stateful Communication
+
+Que7)In REST, what is the role of the web browser?
+a)Server
+b) Middleware
+c)Client
+d) Database
+A7)c)Client
+
+Que8)What is a key characteristic of the state in RESTful Architecture?
+a) Dynamic
+b) Stateless
+c) Persistent
+d) Encrypted
+A8)b) Stateless
+
+Que9)What does the annotation @RestController signify in SpringRest?
+a) Provides security features
+b) Combines @Controller and @ResponseBody
+c)Defines a scheduled task
+d) Maps request parameters
+A9)b) Combines @Controller and @ResponseBody
+
+Que10)When should ResponseEntity be used in a Spring application?
+a) Only for handling request parameters
+b) To define HTTP request methods
+c) To represent the entire HTTP response
+d) Exclusively for managing HTTP response headers
+A10)c) To represent the entire HTTP response
+
+Que11)What aspects does ResponseEntity handle in Spring?
+a) HTTP Status Code
+b) HTTP Headers
+c) HTTP Body
+d) All of the above
+A11)d) All of the above
+
+Que12)What is the primary purpose of the HTTP request "POST /users"?
+a) Retrieve user details
+b)Create a user
+c)Delete user data
+d) Update user information
+A12)b)Create a user
+
+Que13)Which HTTP status code is commonly associated with "Resource Not Found"?
+a) 200
+b) 201
+c) 401
+d) 404
+A13)d) 404
+
+Que14)What action does "GET /users/{id}" perform in a RESTful API?
+a) Deletes a user
+b) Retrieves all user details
+c) Creates a new user
+d) Retrieves the details of a specific user
+A14)d) Retrieves the details of a specific user
+
+Que15)When the HTTP request "DELETE /users" is made, what is the intended action?
+a) Retrieve user details
+b) Update user information
+c) Delete all users
+d) Create a new user
+A15)c) Delete all users
+
+Que16)Which HTTP status code indicates a successful operation in the RESTful API standard?
+a) 401
+b) 404
+c) 200
+d) 500
+A16)c) 200
+
+Que17)What does "DELETE /users/{id}/posts/post_id" typically do in a RESTful API?
+a) Retrieve post details
+b) Delete a specific post
+c) Create a new post
+d) Update post information
+A17)b) Delete a specific post
+
+Que18)Which HTTP status code represents a server error in the RESTful API standard?
+a) 401
+b) 404
+c) 200
+d) 500
+A18)d) 500
+
+Que19)What is the significance of the HTTP request "GET /users" in a RESTful API?
+a) Create a user
+b) Retrieve all user details
+c) Delete user data
+d) Update user information
+A19)b) Retrieve all user details
+
+Que20)What action does "POST /users/{id}/posts" perform in a RESTful API?
+a) Retrieve post details
+b) Delete a post
+c) Create a new post for a specific user
+d) Update post information
+A20)c) Create a new post for a specific user
+
+Que21)Which HTTP status code is associated with a successful resource creation operation in a RESTful API?
+a) 401
+b) 404
+c) 201
+d) 500
+A21)c) 201
+
+Que22)What does "DevTools" stand for in the context of Spring Boot?
+a) Development Tools
+b) Debugging Techniques
+c) Deployment Modules
+d) Data Transformation
+A22)a) Development Tools
+
+Que23)Which dependency needs to be added to a Spring Boot application to utilize DevTools?
+a) spring-boot-starter-web
+b) spring-boot-devtools
+c) spring-boot-starter-data
+d) spring-boot-test
+A23)b) spring-boot-devtools
+
+Que24)What is the primary aim of Spring Boot DevTools?
+a) Enhance security features
+b) Improve development time
+c) Optimize runtime performance
+d) Streamline database connections
+A24)b) Improve development time
+
+Que25)What annotation is used to mark a class as a controller in Spring?
+a) @RestController
+b) @Controller
+c) both a and b
+d) @GetMapping
+A25)c) both a and b
+
+Que26)Which annotation is used to simplify the mapping of HTTP GET requests for the "/books"?
+a) @RequestMapping
+b) @GetMapping
+c) @RequestMethod.GET
+d) @RestController
+A26)b) @GetMapping
+
+Que27)Which annotation is used to simplify the mapping of HTTP POST requests for the "/books"?
+a) @RequestMapping
+b) @PostMapping
+c) @RequestMethod.POST
+d) @RestController
+A27) b) @PostMapping
+
+Que28)Which annotation is used to simplify the mapping of HTTP DELETE requests for the "/books/{id}"?
+a) @RequestMapping
+b) @DeleteMapping
+c) @RequestMethod.DELETE
+d) @RestController
+A28) b) @DeleteMapping
+
+Que29)Which annotation is used to simplify the mapping of HTTP update requests for the "/books/{id}"?
+a) @RequestMapping
+b) @PutMapping
+c) @RequestMethod.PUT
+d) @RestController
+A29 b) @PutMapping
+
+Que30)In which version of Spring was the @Controller annotation introduced?
+a) 2.0
+b) 3.0
+c) 2.5
+d) 4.0
+A30) c) 2.5
+
+Que31)Which annotation indicates that a class is a controller where @RequestMapping methods assume @ResponseBody semantics by default?
+a) @Controller
+b) @RestController
+c) @ResponseBodyController
+d) @RequestMappingController
+A31)b) @RestController
+
+Que32)In @Controller, what do we need to use on every handler method to indicate that the result should be treated as the response body?
+a) @ResponseBody
+b) @ResponseView
+c) @RestController
+d) @RequestBody
+A32a) @ResponseBody
+
+Que33)What is the primary difference between @Controller and @RestController regarding returning views?
+a) Both can return views
+b) Only @Controller can return views
+c) Only @RestController can return views
+d) Neither @Controller nor @RestController can return views
+A33) b) Only @Controller can return views
+
+Que34)In the context of @RestController, what does the absence of @ResponseBody on each handler method imply?
+a) The method cannot return data
+b) The method cannot handle requests
+c) The method's return value is automatically treated as the response body
+d) The method must return a view
+A34) c) The method's return value is automatically treated as the response body
+
+Que35)When was the @RestController annotation introduced in the Spring framework?
+a) Version 2.0
+b) Version 3.0
+c) Version 4.0
+d) Version 5.0
+A35)c) Version 4.0
+
+Que36)What does JSON stand for in the context of web development?
+a) JavaScript Object Notation
+b) Java Serialized Object Notation
+c) JSON Simple Object Naming
+d) JavaScript Object Navigator
+A36)a) JavaScript Object Notation
+
+Que37)In JSON, what is the purpose of the curly braces {}?
+a) Denotes a string
+b) Represents an array
+c) Indicates an object
+d) Marks a boolean value
+A37)c) Indicates an object
+
+Que38)In a JSON object, what is a key-value pair?
+a) A single value in the object
+b) The entire object
+c) A property and its corresponding value
+d) A nested object within the main object
+A38)c) A property and its corresponding value
+
+Que39)What character is used to separate multiple key-value pairs in a JSON object?
+a) Semicolon (;)
+b) Comma (,)
+c) Colon (:)
+d) Period (.)
+A39) b) Comma (,)
+
+Que40)Which of the following is a valid JSON array?
+a) { "name": "John", "age": 25 }
+b) [ "apple", "orange", "banana" ]
+c) "color": "blue"
+d) 12345
+A40)b) [ "apple", "orange", "banana" ]
+
+Que41)In JSON, what is the correct way to represent an array of boolean values?
+a) "true"
+b) ["false","true"]
+c) [true , false]
+d) none of these
+A41)c) [true , false]
+
+Que42)What is the role of Postman in the context of RESTful APIs and JSON?
+a) It is a programming language for JSON manipulation.
+b) It is a tool for designing RESTful APIs.
+c) It is a database management system.
+d) It is an HTTP client for testing and working with APIs.
+A42)d) It is an HTTP client for testing and working with APIs.
+
+Que43)What is Postman primarily used for in the context of Spring Boot REST applications?
+a) Database management
+b) Code compilation
+c) Testing and interacting with APIs
+d) Front-end development
+A43) c) Testing and interacting with APIs
+
+Que44)In Postman, what is the purpose of the "Body" tab when making a request?
+a) To specify request headers
+b) To define query parameters
+c) To provide the request body, often in JSON format
+d) To view the response status code
+A45) c) To provide the request body, often in JSON format
+
+Que46)When sending a POST request for a new Book in Postman, where should you place the JSON payload?
+a) In the request URL
+b) In the request headers
+c) In the request body as raw JSON
+d) In the query parameters
+A46)c) In the request body as raw JSON
+
+Que47)Which JSON format is correct for creating a new Book using a POST request in Postman?
+a) { "id": 1, "title": "Introduction to Spring", "author": "Navin Reddy" }
+b) { id : 1, title: "Introduction to Spring", author: "Navin Reddy" }
+c) [ "id": 1, "name": "Introduction to Spring", "author": "Navin Reddy" ]
+d) ("id": 1, "title": "Introduction to Spring", "author": "Navin Reddy" )
+A47)a) { "id": 1, "title": "Introduction to Spring", "author": "Navin Reddy" }
+
+Que48)What is the purpose of the @RequestBody annotation in Spring?
+a) It specifies the HTTP request method.
+b) It marks a class as a request body.
+c) It is used to deserialize the request body into an object.
+d) It defines the response body of a controller method.
+A48)c) It is used to deserialize the request body into an object.
+
+Que49)What is the purpose of the ResponseEntity.ok(HttpStatus.OK) in the createUser method?
+a) It defines the response body.
+b) It sets the HTTP status code to 200 OK.
+c) It redirects the request.
+d) It handles exceptions.
+A49) b) It sets the HTTP status code to 200 OK.
+
+Que50)Can the @RequestBody annotation be used with XML payloads instead of JSON payloads?
+a) Yes
+b) No
+A50) a) Yes
+
+Que51)Can we map JSON payload to nested Java objects using @RequestBody?
+a)yes
+b)No
+A51)a)yes
+
+Que52)How can you represent nesting of the Address object within the User object in JSON?
+public class User {
+    private String name;
+    private int age;
+    private Address address;
+    // getters and setters
+}
+
+public class Address {
+    private String street;
+    private String city;
+    private String state;
+    private String zip;
+    // getters and setters
+}
+a){
+    "name": "John Doe",
+    "age": 30,
+    "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zip": "12345"
+    }
+}
+b){
+    "User": {
+        "name": "John Doe",
+        "age": 30,
+        "Address": {
+            "street": "123 Main St",
+            "city": "Anytown",
+            "state": "CA",
+            "zip": "12345"
+        }
+    }
+}
+
+c){
+    "user_name": "John Doe",
+    "user_age": 30,
+    "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zip": "12345"
+    }
+}
+
+d){
+    "user": {
+        "name": "John Doe",
+        "age": 30,
+        "address": {
+            "street": "123 Main St",
+            "city": "Anytown",
+            "state": "CA",
+            "zip": "12345"
+        }
+    }
+}
+A52)a)
+
+Que53)Can I use @RequestBody with a collection or array of objects?
+a)Yes
+b)No
+A53)a)Yes
+
+Que54)Which method is correct to map a list of a collection or an array of objects in Spring Boot?
+a)@PostMapping("/users")
+public ResponseEntity<String> addUser(@RequestBody List<User> users) {
+    // Process the list of users
+    return ResponseEntity.ok("Users added successfully");
+}
+b)@PostMapping("/products")
+public ResponseEntity<String> addProducts(@RequestBody Product[] products) {
+    // Process the array of products
+    return ResponseEntity.ok("Products added successfully");
+}
+c)both a and b
+d)None of these
+A54)c)both a and b
+
+Que55)Which is the correct representation for providing a list of users in JSON format?
+public class User{
+private String name;
+private String email;
+}
+a){
+    "users": [
+        {
+            "name": "John",
+            "email": "john@example.com"
+        },
+        {
+            "name": "Jane",
+            "email": "jane@example.com"
+        }
+    ]
+}
+b)[
+    {
+        "name": "John",
+        "email": "john@example.com"
+    },
+    {
+        "name": "Jane",
+        "email": "jane@example.com"
+    }
+]
+c)"users": [
+    {
+        "name": "John",
+        "email": "john@example.com"
+    },
+    {
+        "name": "Jane",
+        "email": "jane@example.com"
+    }
+]
+
+d)[
+    {
+        "name": "John",
+        "email": "john@example.com"
+    },
+    {
+        "name": "Jane",
+        "email": "jane@example.com"
+    }
+]
+A55)b)
+
+Que56)In the given Spring Boot controller method, what does the following part represent?
+return new ResponseEntity<>("Hello World!", headers, HttpStatus.OK);
+a) Response Body
+b) Response Header
+c) Response Status
+d)None of these
+A56)a) Response Body
+
+Que57)Given Code
+@GetMapping("/hello")
+ResponseEntity<String> hello() {
+    HttpHeaders headers = new HttpHeaders();
+    headers.add("Custom-Header", "Custom-Value");
+
+    return new ResponseEntity<>("Hello World!", headers, HttpStatus.OK);
+}
+
+what purpose does the following section serve?
+HttpHeaders headers = new HttpHeaders();
+headers.add("Custom-Header", "Custom-Value");
+a) Setting the response body content
+b) Configuring custom response headers
+c) Defining the response status
+d)None of these
+A57)b) Configuring custom response headers
+
+Que58)What does the following part of the code signify
+HttpStatus.OK
+a)Response Body
+b)Response Header
+c)Response Status
+d)None  of these
+A58)c)Response Status
+
+Que59)What does the ResponseEntity(HttpStatusCode status) constructor create?
+a) A ResponseEntity with body and headers.
+b) A ResponseEntity with a status code only.
+c) A ResponseEntity with headers and a status code.
+d) A ResponseEntity with a raw status code and headers.
+A59) b) A ResponseEntity with a status code only.
+
+Que60)Question 2: What does the ResponseEntity(MultiValueMap<String, String> headers, HttpStatusCode status) constructor create?
+a) A ResponseEntity with a status code only
+b) A ResponseEntity with headers and a status code.
+c) A ResponseEntity with body, headers, and a status code.
+d) A ResponseEntity with body and headers.
+A60) b) A ResponseEntity with headers and a status code.
+
+Que61)What is the purpose of the ResponseEntity(T body, HttpStatusCode status) constructor?
+a) To create a ResponseEntity with a status code only.
+b) To create a ResponseEntity with a body and headers.
+c) To create a ResponseEntity with a body and status code.
+d) To create a ResponseEntity with headers and a status code.
+A61) c) To create a ResponseEntity with a body and status code.
+
+Que62)Question 1: What does the static ResponseEntity.BodyBuilder ok() method do?
+a) Creates a builder with the status set to OK.
+b) Creates a builder with the status set to NOT FOUND.
+c) Creates a builder with the status set to CREATED.
+d) Creates a builder with the status set to BAD REQUEST.
+A62)a) Creates a builder with the status set to OK.
+
+Que63)What is the purpose of the static <T> ResponseEntity<T> of(Optional<T> body) method?
+
+a) Creates a ResponseEntity with the given body and the status set to OK.
+b) Creates a ResponseEntity with the given body and the status set to NOT FOUND.
+c) Creates a ResponseEntity with the OK status for a non-empty Optional body, or NOT FOUND status for an empty Optional.
+d) Creates a ResponseEntity with the NOT FOUND status for a non-empty Optional body, or OK status for an empty Optional.
+A63)c) Creates a ResponseEntity with the OK status for a non-empty Optional body, or NOT FOUND status for an empty Optional.
+
+Que64)What does the static <T> ResponseEntity<T> ok(T body) method do?
+a) Creates a ResponseEntity with the given body and the status set to OK.
+b) Creates a ResponseEntity with the given body and the status set to NOT FOUND.
+c) Creates a ResponseEntity with the status set to OK, and an empty body.
+d) Creates a ResponseEntity with the status set to NOT FOUND, and an empty body.
+A64)a) Creates a ResponseEntity with the given body and the status set to OK
+
+Que65)What is the common issue referred to as the "Jackson JSON infinite recursion problem"?
+
+a) A bug in the Jackson library
+b) A security vulnerability in JSON parsing
+c) An issue when dealing with cyclic dependencies in bidirectional relationships
+d) A problem related to the handling of null values in JSON
+A65)c) An issue when dealing with cyclic dependencies in bidirectional relationships
+
+Que66)What Jackson annotations can be used to address the "infinite recursion problem" in bidirectional relationships?
+a) @JsonIdentityInfo and @JsonTypeInfo
+b) @JsonIgnore and @JsonInclude
+c) @JsonBackReference and @JsonManagedReference
+d) @JsonFormat and @JsonPropertyOrder
+A66)c) @JsonBackReference and @JsonManagedReference
+
+Que67)What annotation is used to indicate that the class contains exception handling advice for Spring MVC controllers?
+a) @ControllerAdvice
+b) @RestControllerAdvice 
+c)  both a and b
+d) @ExceptionHandlerAdvice
+A67)c)  both a and b
+
+Que68)Which annotation is applied to the method that handles the Exception of a specific type?
+a) @ExceptionHandler
+b) @HandleException
+c) @HandleError
+d) @ExceptionHandle
+A68)a) @ExceptionHandler
+
+Que69)What is the purpose of ModelMapper in Java development?
+a) To map data objects 
+b) To create models for database entities
+c) To handle exceptions in model classes
+d) To provide security features for models
+A69)a) To map data objects 
+
+Que70)Which class is responsible for the actual mapping of data in the dtoToUser method?
+a) User
+b) UserDto
+c) ModelMapper
+d) DataMapper
+A70)c)ModelMapper
+
+Que71)What does the modelMapper.map(userDto, User.class) line accomplish in the dtoToUser method?
+a) It creates a new instance of the User class.
+b) It copies the properties from the userDto object to a new User object.
+c) It checks if the userDto object is an instance of the User class.
+d) It deletes the User class and replaces it with a new instance of userDto.
+A71)b) It copies the properties from the userDto object to a new User object.
+
+Que72)Which dependency is required to enable validation in a Spring Boot project, as shown in the provided content?
+a) spring-boot-starter-data
+b) spring-boot-starter-validation
+c) spring-boot-starter-web
+d) spring-boot-starter-security
+A72)b) spring-boot-starter-validation
